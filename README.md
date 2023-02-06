@@ -1,7 +1,8 @@
 # DAKexport
 Export DAK9 .stp files
 
-Collaboration with [Agnes Cameron](https://github.com/agnescameron)
+A collaboration between [Agnes Cameron](https://github.com/agnescameron)
+and [Tom Price](https://github.com/t0mpr1c3/).
 
 ## Aim
 
@@ -37,7 +38,7 @@ https://github.com/mhofmann-uw/599-Knitting-Complete).
 I have come up with a format called [Knitscheme](https://github.com/t0mpr1c3/knitscheme)
 which is essentially a generalisation of Knitspeak to multiple yarns. It is
 currently possible to input multicolour `.png` files. I am planning to write
-a parser for Knitspeak in the nearfuture.
+a parser for Knitspeak in the near future.
 
 My suggestion is to use Knitscheme an intermediary format, at least initially, 
 so that we can test pipelines from `.png` files and Knitspeak to Designaknit.
