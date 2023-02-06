@@ -72,6 +72,19 @@ stitches in Knitscheme.)
 ## Other machine knitting techniques?
 
 There are other machine knitting techniques like weaving, thread lace,
-plating and so on. Whether these can be marked in DAK I don't know.
-There are likely techniques that I am unaware of. Please make a note of
-any that you might be interested in using.
+plating, beading and so on. Whether these can be marked in DAK I don't
+know. There are likely techniques that I am unaware of. Please make a
+note of any that you might be interested in using.
+
+## Hand knitting techniques
+
+There are hand knitting techniques like entrelac, "bobble stitches", 
+and so on that don't have equivalents in machine knitting. These are
+a low priority, but please make a note of the ones that can be coded
+in DAK.
+
+## Pattern annotations
+
+"Memos", placement of stitch markers, and other annotations, can be
+important features of a pattern. It may be possible to incorporate
+some of these.
