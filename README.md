@@ -5,8 +5,10 @@ Collaboration with [Agnes Cameron](https://github.com/agnescameron)
 
 ## Aim
 
-The goal is to output knitting patterns as `.stp` files compatible with
-recent versions of [Designaknit](https://softbyte.co.uk/).
+The goal is to write knitting patterns as `.stp` files compatible with
+recent versions of [Designaknit](https://softbyte.co.uk/), so that
+patterns written by other means can be used by people who use that
+software.
 
 ## Tasks
 
