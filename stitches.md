@@ -1,7 +1,7 @@
 # Stitches
 
 The following are stitches that we will need to figure out how to encode,
-order by approximate frequency or importance in machine knitting.
+in order of approximate frequency or importance in machine knitting.
 
 - knit
 - 
