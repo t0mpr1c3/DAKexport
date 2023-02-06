@@ -11,7 +11,7 @@ Other stitches may be represented differently in hand knitting than in
 machine knitting.
 
 (If you add to this list, please try to find the appropriate symbols in
-one of the Stitchmastery fonts so that I know how best to represent the
+one of the Stitchmastery fonts so that Tom will know how best to represent the
 stitches in Knitscheme.)
 
 - knit
