@@ -3,6 +3,9 @@
 The following are stitches that we will need to figure out how to encode,
 in order of approximate frequency or importance in machine knitting.
 We could have a useful prototype even knowing just a handful of these.
+(If you add to this list, please try to find the appropriate symbols in
+one of the Stitchmastery fonts so that I know how best to represent the
+stitches in Knitscheme.)
 
 - knit
 - 
