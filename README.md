@@ -7,8 +7,8 @@ Collaboration with [Agnes Cameron](https://github.com/agnescameron)
 
 The goal is to write knitting patterns as `.stp` files compatible with
 recent versions of [Designaknit](https://softbyte.co.uk/), so that
-patterns written by other means can be used by people who use that
-software.
+patterns written by other means can be used by people who have access
+to that software.
 
 ## Tasks
 
