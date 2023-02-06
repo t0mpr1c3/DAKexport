@@ -11,6 +11,9 @@ recent versions of [Designaknit](https://softbyte.co.uk/), so that
 patterns written by other means can be used by people who have access
 to that software.
 
+The priority is making patterns usable for people with domestic-type
+knitting machines from brands like Brother and Silver Reed.
+
 ## Tasks
 
 Progress has already been made on decoding the proprietary format 
