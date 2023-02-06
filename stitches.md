@@ -7,6 +7,9 @@ We could have a useful prototype even knowing just a handful of these.
 Knit, purl, and possibly others have symbols that change depending on
 the row number and pattern options.
 
+Other stitches may be represented differently in hand knitting than in
+machine knitting.
+
 (If you add to this list, please try to find the appropriate symbols in
 one of the Stitchmastery fonts so that I know how best to represent the
 stitches in Knitscheme.)
