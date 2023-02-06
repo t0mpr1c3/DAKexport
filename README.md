@@ -6,7 +6,7 @@ and [Tom Price](https://github.com/t0mpr1c3/).
 
 ## Aim
 
-The goal is to write knitting patterns as `.stp` files compatible with
+The goal is to encode knitting patterns as `.stp` files compatible with
 recent versions of [Designaknit](https://softbyte.co.uk/), so that
 patterns written by other means can be used by people who have access
 to that software.
