@@ -29,6 +29,8 @@ in order of approximate frequency or importance in machine knitting.
 - 
 - yarn-over
 - 
+- no-stitch
+- drop-stitch
 ?
 
 ## Low frequency stitches
@@ -50,9 +52,6 @@ in order of approximate frequency or importance in machine knitting.
 - 
 - special-stitch
 - wrap-and-turn
-- no-stitch
-- drop-stitch
 - 
 - cable stitches
-- 
 ?
