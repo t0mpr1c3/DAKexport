@@ -57,3 +57,8 @@ in order of approximate frequency or importance in machine knitting.
 - cable stitches
 - 
 ?
+
+## Other machine knitting techniques?
+
+There are other machine knitting techniques like weaving, thread lace, plating and so on.
+Whether these can be marked in DAK I don't know. There are likely techniques that I am unaware of.
