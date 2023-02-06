@@ -18,7 +18,7 @@ Progress has already been made on decoding the proprietary format
 of 0xF8 bytes whose content is mostly unknown. Following that is a block
 of colour data, one byte per stitch, whose content is mostly known. A
 second block of stitch data, again one byte per stitch, is unknown. The
-data are then obfuscated to produce a compact binary file.
+raw data are obfuscated to produce a compact binary file.
 
 A series of experiments will be necessary to discover the header format
 and stitch codes.
