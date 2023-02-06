@@ -1,9 +1,12 @@
 # Header information
 
-We probably need to know how to encode most if not all of these options,
-with the posssible exception of machine spec.
+We probably need to know how to encode most if not all of the options below,
+with the possible exception of machine spec.
 
 Hand knitting options are obviously a lower priority though.
+
+There is a ton of random stuff we can leave as the default.
+Nobody cares if the font for the colour names is Arial or Calibri.
 
 ##
 * "Magic number" - known
