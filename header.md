@@ -1,5 +1,7 @@
 # Header information
 
+We probably need to know most if not all of these apart from machine spec.
+
 ##
 * "Magic number" - known
 * Height - known
