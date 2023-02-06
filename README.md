@@ -19,7 +19,7 @@ knitting machines from brands like Brother and Silver Reed.
 Progress has already been made on decoding the proprietary format 
 (see https://github.com/t0mpr1c3/DAKimport). There is an initial header
 of 0xF8 bytes whose content is mostly unknown. Following that is a block
-of colour data, one byte per stitch, whose content is mostly known. A
+of colour data, one byte per stitch from left to right, top to bottom, whose content is mostly known. A
 second block of stitch data, again one byte per stitch, is unknown. The
 raw data are obfuscated to produce a compact binary file.
 
