@@ -24,7 +24,8 @@ A series of experiments will be necessary to discover the header format
 and stitch codes.
 
 I will make a start on a Python module to perform the obfuscation, which
-is the reverse of the de-obfuscation done by `DAKimport`.
+should be straightforward as is simply the reverse of the de-obfuscation
+done by `DAKimport`.
 
 ## Input
 
