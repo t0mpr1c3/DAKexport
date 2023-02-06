@@ -2,6 +2,7 @@
 
 The following are stitches that we will need to figure out how to encode,
 in order of approximate frequency or importance in machine knitting.
+We could have a useful prototype even knowing just a handful of these.
 
 - knit
 - 
@@ -60,5 +61,7 @@ in order of approximate frequency or importance in machine knitting.
 
 ## Other machine knitting techniques?
 
-There are other machine knitting techniques like weaving, thread lace, plating and so on.
-Whether these can be marked in DAK I don't know. There are likely techniques that I am unaware of.
+There are other machine knitting techniques like weaving, thread lace,
+plating and so on. Whether these can be marked in DAK I don't know.
+There are likely techniques that I am unaware of. Please make a note of
+any that you might be interested in using.
