@@ -40,7 +40,7 @@ which is essentially a generalisation of Knitspeak to multiple yarns. It is
 currently possible to input multicolour `.png` files. I am planning to write
 a parser for Knitspeak in the near future.
 
-My tentative suggestion is to use Knitscheme as an intermediary format, at least
+My tentative suggestion is to use Knitscheme as an intermediate format, at least
 initially, so that we can test pipelines from `.png` files and Knitspeak to
 Designaknit. This would take advantage of existing pattern collections
 (e.g. https://github.com/AllYarnsAreBeautiful/ayab-patterns, https://stitch-maps.com/patterns/).
