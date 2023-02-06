@@ -24,9 +24,9 @@ second block of stitch data, again one byte per stitch, is unknown. The
 raw data are obfuscated to produce a compact binary file.
 
 A series of experiments will be necessary to discover the header format
-and stitch codes.
+and stitch codes (Agnes?)
 
-I will make a start on a Python module to perform the obfuscation, which
+Tom will make a start on a Python module to perform the obfuscation, which
 should be straightforward as is simply the reverse of the de-obfuscation
 done by `DAKimport`.
 
