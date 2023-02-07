@@ -20,9 +20,9 @@ Progress has already been made on decoding the proprietary format
 (see [DAKimport](https://github.com/t0mpr1c3/DAKimport)). There is an
 initial header of 0xF8 bytes whose important content is known. Following
 that is a block of colour data, one byte per stitch from left to right, 
-top to bottom, whose contents references a panel of colour data. A
-second block of stitch data, again one byte per stitch, is unknown. The
-raw data are obfuscated to produce a compact binary file.
+top to bottom, whose contents references a panel of colour data. This is
+followed by a second block of stitch data, also one byte per stitch, whose
+contents are unknown. The raw data are obfuscated to produce a compact binary file.
 
 A series of experiments will be necessary to discover the stitch codes (Agnes?)
 
