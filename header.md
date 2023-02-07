@@ -16,22 +16,29 @@ Nobody cares if the font for the colour names is Arial or Calibri.
 * Width - locations 0x05 0x09 0x15. 16 bit word
 
 ## Knitting options
-* location 0x2C=0x00 Machine Fair Isle
-		0x01 machine Intarsia
-		0x02 machine 2 colour Jacquard
-                0x03 machine 3 colour Jacquard
-		0x04 machine 4 colour Jacquard
-		0x05 machine 5 colour Jacquard
-                0x06 machine 6 colour Jacquard
-		0x0C hand knitting
-		0x0E machine RS texture
+* location 0x2C=0x00 Machine Fair Isle,
+		0x01 machine Intarsia,
+		0x02 machine 2 colour Jacquard,
+                0x03 machine 3 colour Jacquard,
+		0x04 machine 4 colour Jacquard,
+		0x05 machine 5 colour Jacquard,
+                0x06 machine 6 colour Jacquard,
+		0x0C hand knitting,
+		0x0E machine RS texture,
 		0x0F machine WS texture
-* location 0xEA=0x00 flat knit, 0x01 circular knit
-* location 0xE9=0x00 row 1 starts RHS, 0x01 row 1 starts LHS
-* location 0xEC=0x00 row 1 starts RS, 0x01 row 1 starts WS
+* location 0xEA=0x00 flat knit,
+		0x01 circular knit
+* location 0xE9=0x00 row 1 starts RHS,
+		0x01 row 1 starts LHS
+* location 0xEC=0x00 row 1 starts RS, 
+		0x01 row 1 starts WS
 
 ## Hand knitting options
-* location 0xEB=0x00 stocking stitch, 0x01 rev stocking stitch, 0x02 K garter stitch, 0x03 P garter stitch
+* location 0xEB=0x00 stocking stitch,
+		0x01 rev stocking stitch,
+		0x02 K garter stitch,
+		0x03 P garter stitch
 
 ## Machine knitting options
-* location 0xEE=0x00 colour changer off, 0x01 colour changer on
+* location 0xEE=0x00 colour changer off,
+		0x01 colour changer on
