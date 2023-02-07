@@ -1,7 +1,7 @@
 # Stitches
 
 The following are stitches that we will need to figure out how to encode,
-in order of approximate frequency or importance in machine knitting.
+in order of atheir pproximate frequency or importance in machine knitting.
 We could have a useful prototype even knowing just a handful of these.
 
 Knit, purl, and possibly others have symbols that change depending on
