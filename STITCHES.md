@@ -73,8 +73,8 @@ stitches in Knitscheme.)
 
 There are other machine knitting techniques like weaving, thread lace,
 plating, beading and so on. Whether these can be marked in DAK I don't
-know. There are likely techniques that I am unaware of. Please make a
-note of any that you might be interested in using.
+know. There are likely further techniques that I am unaware of. Please 
+make a note of any that you might be interested in using.
 
 ## Hand knitting techniques
 
