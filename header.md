@@ -8,7 +8,7 @@ There are various other parameters that can be left as default values.
 Nobody cares if the font for the colour names is Arial or Calibri.
 
 ## Miscellaneous
-* "Magic number" - location 0x00. value 0x633744 ('D7c')
+* "Magic number" - location 0x00. 24 bit value 0x633744 ('D7c')
 * Random number - location 0x3D. 16 bit word. used in obfuscation but can be set to 0x0000 without consequences
 
 ## Dimensions
