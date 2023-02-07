@@ -1,6 +1,6 @@
-We will need to do a series of experiments to reverse engineer the file format.
+A series of experiments will be required to reverse engineer the file format.
 
-An experiment might be something like this:
+An experiment might proceed something like this:
 
 * Create a small test pattern in DAK and record all the steps taken to make it
 so that it can be recreated exactly.
