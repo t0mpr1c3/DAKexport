@@ -80,8 +80,7 @@ make a note of any that you might be interested in using.
 
 There are hand knitting techniques like entrelac, "bobble stitches", 
 and so on that don't have equivalents in machine knitting. These are
-a low priority, but please make a note of the ones that can be coded
-in DAK.
+a low priority, but please make a note of any that can be coded in DAK.
 
 ## Pattern annotations
 
