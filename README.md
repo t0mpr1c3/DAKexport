@@ -26,7 +26,7 @@ contents are unknown. The raw data are obfuscated to produce a compact binary fi
 A series of experiments will be necessary to discover the stitch codes (Agnes?)
 
 Tom will make a start on a Python module to perform the obfuscation, which
-should be straightforward as is simply the reverse of the de-obfuscation
+should be straightforward as it is simply the reverse of the de-obfuscation
 done by `DAKimport`.
 
 ## Input
