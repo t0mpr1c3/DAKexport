@@ -49,5 +49,5 @@ a parser for Knitspeak in the near future.
 
 My tentative suggestion is to use Knitscheme as an intermediate format, at least
 initially, so that we can test pipelines from `.png` files and Knitspeak to
-Designaknit. This would take advantage of existing pattern collections
+DAK. This would take advantage of existing pattern collections
 (e.g. https://github.com/AllYarnsAreBeautiful/ayab-patterns, https://stitch-maps.com/patterns/).
