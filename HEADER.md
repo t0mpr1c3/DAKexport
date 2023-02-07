@@ -20,7 +20,7 @@ few colours.
 * Width - locations 0x05 0x09 0x15. 16 bit word
 
 ## Knitting options
-* location 0x2C=0x00 Machine Fair Isle,
+* location 0x2C=0x00 machine Fair Isle,
 		0x01 machine Intarsia,
 		0x02 machine 2 colour Jacquard,
                 0x03 machine 3 colour Jacquard,
