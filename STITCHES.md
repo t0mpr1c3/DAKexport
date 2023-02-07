@@ -23,7 +23,7 @@ stitches in Knitscheme.)
 - 
 - slip-wyib
 - slip-wyif
-- tuck
+- tuck (various options)
 - 
 - knit-two-together
 - purl-two-together
@@ -65,7 +65,7 @@ stitches in Knitscheme.)
 - special-stitch
 - wrap-and-turn
 - 
-- cable stitches
+- cable stitches (various)
 - 
 ?
 
