@@ -85,6 +85,6 @@ in DAK.
 
 ## Pattern annotations
 
-"Memos", placement of stitch markers, and other annotations, can be
+"Memos", placement of stitch markers, and other annotations can be
 important features of a pattern. It may be possible to incorporate
 some of these.
