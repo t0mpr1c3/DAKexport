@@ -1,5 +1,4 @@
 # DAKexport
-Export DAK9 `.stp` files
 
 A collaboration between [Agnes Cameron](https://github.com/agnescameron)
 and [Tom Price](https://github.com/t0mpr1c3/).
