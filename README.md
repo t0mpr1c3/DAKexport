@@ -18,13 +18,12 @@ knitting machines from brands like Brother and Silver Reed.
 
 Progress has already been made on decoding the proprietary format 
 (see [DAKimport](https://github.com/t0mpr1c3/DAKimport)). There is an initial header
-of 0xF8 bytes whose content is mostly unknown. Following that is a block
+of 0xF8 bytes whose content is partly known. Following that is a block
 of colour data, one byte per stitch from left to right, top to bottom, whose content is mostly known. A
 second block of stitch data, again one byte per stitch, is unknown. The
 raw data are obfuscated to produce a compact binary file.
 
-A series of experiments will be necessary to discover the header format
-and stitch codes (Agnes?)
+A series of experiments will be necessary to discover the stitch codes (Agnes?)
 
 Tom will make a start on a Python module to perform the obfuscation, which
 should be straightforward as is simply the reverse of the de-obfuscation
