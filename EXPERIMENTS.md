@@ -10,3 +10,7 @@ so that it can be recreated exactly.
 * Deobfuscate the `.stp` file and examine to see how the contents have changed.
 
 * Repeat until we have learned how these stitches are encoded under different pattern options.  
+
+
+Experiments can also be performed in the reverse direction. For example, the header
+can be edited directly to verify the meaning of header codes in the resulting file.
