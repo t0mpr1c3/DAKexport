@@ -54,13 +54,13 @@ stitches in Knitscheme.)
 - slip-slip-slip-knit
 - slip-slip-slip-purl
 - 
-- k1-yo-k1-in-next-stitch
-- p1-yo-p1-in-next-stitch
-- 
 - knit-tbl
 - purl-tbl
 - knit-below
 - purl-below
+- 
+- k1-yo-k1-in-next-stitch
+- p1-yo-p1-in-next-stitch
 - 
 - special-stitch
 - wrap-and-turn
