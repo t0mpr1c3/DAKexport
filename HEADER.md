@@ -39,9 +39,9 @@ few colours.
 
 ## Hand knitting options
 * location 0xEB=0x00 stocking stitch,
-		0x01 rev stocking stitch,
-		0x02 K garter stitch,
-		0x03 P garter stitch
+		0x01 reverse stocking stitch,
+		0x02 garter stitch (K),
+		0x03 garter stitch (P)
 
 ## Machine knitting options
 * location 0xEE=0x00 colour changer off,
