@@ -78,7 +78,7 @@ make a note of any that you might be interested in using.
 
 ## Hand knitting techniques
 
-There are hand knitting techniques like entrelac, "bobble stitches", 
+There are techniques used in hand knitting like entrelac, "bobble stitches", 
 and so on that don't have equivalents in machine knitting. These are
 a low priority, but please make a note of any that can be coded in DAK.
 
