@@ -13,4 +13,4 @@ so that it can be recreated exactly.
 
 
 Experiments can also be performed in the reverse direction. For example, the header
-can be edited directly to verify the meaning of header codes in the resulting file.
+can be edited directly to verify the effect of header codes in the resulting file.
