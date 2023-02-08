@@ -13,7 +13,7 @@ few colours.
 
 ## Miscellaneous
 * "Magic number" - location 0x00. 24 bit value 0x633744 ('D7c')
-* location 0x20=0x46 ('F)
+* location 0x20=0x46 ('F')
 * Random number - location 0x3D. 16 bit word. seems to vary unpredictably between files. used in obfuscation.
 
 ## Dimensions
