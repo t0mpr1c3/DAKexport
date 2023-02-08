@@ -14,11 +14,15 @@ few colours.
 ## Miscellaneous
 * "Magic number" - location 0x00. 24 bit value 0x633744 ('D7c')
 * location 0x20=0x46 ('F')
-* Random number - location 0x3D. 16 bit word. seems to vary unpredictably between files. used in obfuscation.
+* Random number - location 0x3D, 16 bit word. seems to vary unpredictably between files. used in obfuscation.
 
 ## Dimensions
-* Height - locations 0x03 0x07. 16 bit word
-* Width - locations 0x05 0x09 0x15. 16 bit word
+* Height - locations 0x03 0x07, 16 bit word
+* Width - locations 0x05 0x09 0x15, 16 bit word
+
+## Repeats
+* Horizontal repeats - location 0x0B, 16 bit word
+* Vertical repeats - location 0x0D, 16 bit word
 
 ## Knitting options
 * location 0x2C=0x00 machine Fair Isle,
