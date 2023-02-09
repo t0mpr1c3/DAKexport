@@ -51,3 +51,6 @@ few colours.
 ## Machine knitting options
 * location 0xEE=0x00 colour changer off,
 		0x01 colour changer on
+
+## Other
+* units of measurement location 0x28=0x00 cm, 0x01 inches
