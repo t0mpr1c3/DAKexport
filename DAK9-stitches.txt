@@ -1,0 +1,612 @@
+32
+K
+Knit
+P
+Purl
+P
+Purl
+K
+Knit
+K
+Knit
+
+46
+P
+Purl
+K
+Knit
+K
+Knit
+P
+Purl
+P
+Purl
+
+===
+
+50
+-
+Machine Tuck
+-
+Machine Tuck
+-
+Machine Tuck
+-
+Machine Tuck
+T
+Machine Tuck
+
+49
+-
+Machine Tuck
+-
+Machine Tuck
+-
+Machine Tuck
+-
+Machine Tuck
+T
+Machine Tuck
+
+51
+-
+Machine Thread Lace
+-
+Machine Thread Lace
+-
+Machine Thread Lace
+-
+Machine Thread Lace
+TL
+Machine Thread Lace
+
+52
+-
+Machine Slip
+-
+Machine Slip
+-
+Machine Slip
+-
+Machine Slip
+S
+Machine Slip
+
+===
+
+131
+YO
+Yarn over
+YO
+Yarn over
+YO
+Yarn over
+YO
+Yarn over
+0
+Lace tool: eyelet
+
+132
+SSK
+S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
+P2tog
+Purl 2 together
+SSPtbl
+Slip 1 Knitwise twice. Insert left needle from front through both stitches and slip back onto left needle then P2togtbl
+K2tog
+Knit 2 together
+LTtrL
+Lace tool: left transfer
+
+133
+K2tog
+Knit 2 together
+SSPtbl
+Slip 1 Knitwise twice. Insert left needle from front through both stitches and slip back onto left needle then P2togtbl
+P2tog
+Purl 2 together
+SSK
+S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
+LTtrR
+Lace tool: right transfer
+
+134
+KSPSSO
+Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. S1 Purlwise
+PSPSSO
+P1, Slip 1 knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch over. S1 purlwise
+SP-PSSO
+Slip 1 purlwise, Purl 1, pass slip stitch over
+SKPSSO
+Slip 1 knitwise, Knit 1, Pass Slip Stitch Over
+LTdecR
+Lace tool: right decrease
+
+135
+SKPSSO
+Slip 1 knitwise, Knit 1, Pass Slip Stitch Over
+SP-PSSO
+Slip 1 purlwise, Purl 1, pass slip stitch over
+PSPSSO
+P1, Slip 1 knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch 
+KSPSSO
+Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. S1 Purlwise
+LTdecL
+Lace tool: left decrease
+
+136
+S2KPSSO
+Slip 2 together Knitwise, Knit 1, Pass 2 slipped stitches over
+SSP1PSSO
+Slip 1 Knitwise twice, then return stitches to left needle. Insert right needle from back and slip 2 together onto right needle. Purl 1 and pass slipped stitches over
+SSP1PSSO
+Slip 1 Knitwise twice, then return stitches to left needle. Insert right needle from back and slip 2 together onto right needle. Purl 1 and pass slipped stitches over
+S2KPSSO
+Slip 2 together Knitwise, Knit 1, Pass 2 slipped stitches over
+LTdbldec
+Lace tool: double decrease
+
+137
+-
+Machine Lace
+-
+Machine Lace
+-
+Machine Lace
+-
+Machine Lace
+LTFtrR
+Lace tool: right fine lace transfer
+
+138
+-
+Machine Lace
+-
+Machine Lace
+-
+Machine Lace
+-
+Machine Lace
+LTFtrL
+Lace tool: left fine lace transfer
+
+===
+
+43
+Tr
+Treble Crochet
+Tr
+Treble Crochet
+Tr
+Treble Crochet
+Tr
+Treble Crochet
+HP
+Needle in Holding Position
+
+61
+Dc
+Double Crochet
+Dc
+Double Crochet
+Dc
+Double Crochet
+Dc
+Double Crochet
+WP
+Needle in Working Position
+
+48
+Sc
+Single Crochet
+Sc
+Single Crochet
+Sc
+Single Crochet
+Sc
+Single Crochet
+NWP
+Needle in Non-Working Position
+
+===
+
+95
+WU
+Weave Under
+WU
+Weave Under
+WU
+Weave Under
+WU
+Weave Under
+WU
+Weave Under
+
+45
+WO
+Weave Over
+WO
+Weave Over
+WO
+Weave Over
+WO
+Weave Over
+WO
+Weave Over
+
+53
+PUF
+Pick up float
+PUF
+Pick up float
+PUF
+Pick up float
+PUF
+Pick up float
+PUF
+Pick up float
+
+54
+PUF2
+Pick up 2 floats
+PUF2
+Pick up 2 floats
+PUF2
+Pick up 2 floats
+PUF2
+Pick up 2 floats
+PUF2
+Pick up 2 floats
+
+55
+PUF3
+Pick up 3 floats
+PUF3
+Pick up 3 floats
+PUF3
+Pick up 3 floats
+PUF3
+Pick up 3 floats
+PUF3
+Pick up 3 floats
+
+56
+PUF*
+Pick up * floats
+PUF*
+Pick up * floats
+PUF*
+Pick up * floats
+PUF*
+Pick up * floats
+PUF*
+Pick up * floats
+
+57
+PUX
+Pick up bottom float
+PUX
+Pick up bottom float
+PUX
+Pick up bottom float
+PUX
+Pick up bottom float
+PUX
+Pick up bottom float
+
+===
+
+92
+K1tbl
+Knit through back of loop
+P1tbl
+Purl through back of loop
+P1tbl
+Purl through back of loop
+K1tbl
+Knit through back of loop
+-
+-
+
+124
+P1tbl
+Purl through back of loop
+K1tbl
+Knit through back of loop
+K1tbl
+Knit through back of loop
+P1tbl
+Purl through back of loop
+-
+-
+
+47
+K1R
+Knit, taking yarn over rather than under needle
+P1R
+Purl, taking yarn under rather than over needle
+P1R
+Purl, taking yarn under rather than over needle
+K1R
+Knit, taking yarn over rather than under needle
+-
+-
+
+63
+P1R
+Purl, taking yarn under rather than over needle
+K1R
+Knit, taking yarn over rather than under needle
+K1R
+Knit, taking yarn over rather than under needle
+P1R
+Purl, taking yarn under rather than over needle
+-
+-
+
+===
+
+91
+s1K
+Slip stitch Knitwise
+s1K
+Slip stitch Knitwise
+s1K
+Slip stitch Knitwise
+s1K
+Slip stitch Knitwise
+-
+-
+
+93
+s1P
+Slip stitch Purlwise
+s1P
+Slip stitch Purlwise
+s1P
+Slip stitch Purlwise
+s1P
+Slip stitch Purlwise
+-
+-
+
+123
+yif, S1K
+With yarn at front of work, slip stitch Knitwise
+yif, S1K
+With yarn at front of work, slip stitch Knitwise
+yif, S1K
+With yarn at front of work, slip stitch Knitwise
+yif, S1K
+With yarn at front of work, slip stitch Knitwise
+-
+-
+
+125
+yib, S1P
+With yarn at back of work, slip stitch Purlwise
+yib, S1P
+With yarn at back of work, slip stitch Purlwise
+yib, S1P
+With yarn at back of work, slip stitch Purlwise
+yib, S1P
+With yarn at back of work, slip stitch Purlwise
+-
+-
+
+===
+
+35
+CO R
+Cast on to Right Needle
+CO R
+Cast on to Right Needle
+CO R
+Cast on to Right Needle
+CO R
+Cast on to Right Needle
+e-wR
+e-wrap at right side of needle bed
+
+126
+CO L
+Cast on to Left Needle
+CO L
+Cast on to Left Needle
+CO L
+Cast on to Left Needle
+CO L
+Cast on to Left Needle
+e-wL
+e-wrap at left side of needle bed
+
+58
+Coc
+Cast on - cable method
+Coc
+Cast on - cable method
+Coc
+Cast on - cable method
+Coc
+Cast on - cable method
+-
+-
+
+59
+Colt
+Cast on - Long tail method
+Colt
+Cast on - Long tail method
+Colt
+Cast on - Long tail method
+Colt
+Cast on - Long tail method
+-
+-
+
+39
+CoK
+Cast on: Knit method
+CoK
+Cast on: Knit method
+CoK
+Cast on: Knit method
+CoK
+Cast on: Knit method
+-
+-
+
+64
+CoP
+Cast on: Purl method
+CoP
+Cast on: Purl method
+CoP
+Cast on: Purl method
+CoP
+Cast on: Purl method
+-
+-
+
+94
+InvCO
+Invisible Cast on
+InvCO
+Invisible Cast on
+InvCO
+Invisible Cast on
+InvCO
+Invisible Cast on
+CoW
+Cast on with Waste Yarn
+
+===
+
+96
+YO
+Yarn over
+YO
+Yarn over
+YO
+Yarn over
+YO
+Yarn over
+EN
+Empty Needle: after transfer, leave empty needle in working position
+
+===
+
+178
+twyo
+Twisted Yarn Over Increase: Bring yarn over needle to front, then under to Knit next stitch
+-
+-
+-
+-
+twyo
+Twisted Yarn Over Increase: Bring yarn over needle to front, then under to Knit next stitch
+-
+-
+
+179
+-
+-
+twyo
+Twisted Yarn Over Increase: Take yarn back under needle then over to Purl next stitch
+twyo
+Twisted Yarn Over Increase: Take yarn back under needle then over to Purl next stitch
+-
+-
+-
+-
+
+180
+-
+-
+oyo
+Open Yarn Over Increase: Take yarn over needle and then under to Purl next stitch
+oyo
+Open Yarn Over Increase: Take yarn over needle and then under to Purl next stitch
+-
+-
+-
+-
+
+181
+oyo
+Open Yarn Over Increase: Bring yarn forward under needle and then over to Knit next stitch
+-
+-
+-
+-
+oyo
+Open Yarn Over Increase: Bring yarn forward under needle and then over to Knit next stitch
+-
+-
+
+===
+
+36
+K1b
+Knit into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+P1b
+Purl into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+P1b
+Purl into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+K1b
+Knit into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+-
+-
+
+194
+P1b
+Purl into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+K1b
+Knit into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+K1b
+Knit into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+P1b
+Purl into centre of stitch on row below next stitch, dropping stitch above as it is transferred to right needle so that both loops are caught in new stitch
+-
+-
+
+38
+PUK
+Pick up and Knit
+PUP
+Pick up and Purl
+PUP
+Pick up and Purl
+PUK
+Pick up and Knit
+PUK
+Pick up on Knit side
+
+37
+PUP
+Pick up and Purl
+PUK
+Pick up and Knit
+PUK
+Pick up and Knit
+PUP
+Pick up and Purl
+PUP
+Pick up on Purl side
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
