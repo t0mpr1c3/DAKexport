@@ -1916,3 +1916,549 @@ Yarn round needle, Purl next three stitches together
 -
 
 ===
+
+182
+-
+Left edge of multi-stitch procedure
+-
+Left edge of multi-stitch procedure
+-
+Left edge of multi-stitch procedure
+-
+Left edge of multi-stitch procedure
+WrpL
+Wrap needle
+
+187
+-
+Right edge of multi-stitch procedure
+-
+Right edge of multi-stitch procedure
+-
+Right edge of multi-stitch procedure
+-
+Right edge of multi-stitch procedure
+WrpR
+Wrap needle
+
+===
+
+129
+-
+Multi-stitch procedure
+-
+Multi-stitch procedure
+-
+Multi-stitch procedure
+-
+Multi-stitch procedure
+-
+Non-selecting Weave float
+
+===
+
+195
+K2B
+Knit into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+P2B
+Purl into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+P2B
+Purl into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+K2B
+Knit into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+196
+P2B
+Purl into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+K2B
+Knit into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+K2B
+Knit into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+P2B
+Purl into centre of stitch 2 rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+===
+
+197
+K3B
+Knit into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+P3B
+Purl into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+P3B
+Purl into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+K3B
+Knit into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+198
+P3B
+Purl into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+K3B
+Knit into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+K3B
+Knit into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+P3B
+Purl into centre of stitch 3 rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+===
+
+199
+K4B
+Knit into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+P4B
+Purl into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+P4B
+Purl into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+K4B
+Knit into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+200
+P4B
+Purl into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+K4B
+Knit into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+K4B
+Knit into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+P4B
+Purl into centre of stitch 4 rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+===
+
+203
+K*B
+Knit into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+P*B
+Purl into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+P*B
+Purl into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+K*B
+Knit into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+204
+P*B
+Purl into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+K*B
+Knit into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+K*B
+Knit into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+P*B
+Purl into centre of stitch n rows below next stitch, dropping stitch above as it is transferred to right needle
+-
+-
+
+===
+
+210
+-
+-
+-
+-
+-
+-
+-
+-
+KBk
+Knit on Back Bed
+
+156
+-
+-
+-
+-
+-
+-
+-
+-
+KFt
+Knit on Front Bed
+
+211
+-
+-
+-
+-
+-
+-
+-
+-
+KK
+Knit on Back and Front Beds
+
+===
+
+158
+-
+-
+-
+-
+-
+-
+-
+-
+TFt
+Tuck on Front Bed
+
+157
+-
+-
+-
+-
+-
+-
+-
+-
+TBk
+Tuck on Back Bed
+
+===
+
+230
+-
+-
+-
+-
+-
+-
+-
+-
+TF-KB
+Tuck on Front Bed, Knit on Back Bed
+
+231
+-
+-
+-
+-
+-
+-
+-
+-
+TB-KF
+Tuck on Back Bed, Knit on Front Bed
+
+===
+
+159
+-
+-
+-
+-
+-
+-
+-
+-
+M
+Miss/slip
+
+===
+
+214
+-
+-
+-
+-
+-
+-
+-
+-
+MB-KF
+Miss/slip on Back Bed, Knit on Front Bed
+
+215
+-
+-
+-
+-
+-
+-
+-
+-
+MF-KB
+Miss/slip on Front Bed, Knit on Back Bed
+
+===
+
+176
+-
+-
+-
+-
+-
+-
+-
+-
+TrF-B
+Transfer Front to Back Bed
+
+177
+-
+-
+-
+-
+-
+-
+-
+-
+TrB-F
+Transfer Back to Front Bed
+
+===
+
+143
+-
+-
+-
+-
+-
+-
+-
+-
+CrL
+Cross Left over Right
+
+144
+-
+-
+-
+-
+-
+-
+-
+-
+CrR
+Cross Right over Left
+
+===
+
+201
+-
+-
+-
+-
+-
+-
+-
+-
+1PLF
+Move 1 pitch to left (Front Bed)
+
+202
+-
+-
+-
+-
+-
+-
+-
+-
+1PRF
+Move 1 pitch to right (Front Bed)
+
+212
+-
+-
+-
+-
+-
+-
+-
+-
+1PLB
+Move 1 pitch to left (Back Bed)
+
+213
+-
+-
+-
+-
+-
+-
+-
+-
+1PRB
+Move 1 pitch to right (Back Bed)
+
+===
+
+42
+*
+Undefined procedure
+*
+Undefined procedure
+*
+Undefined procedure
+*
+Undefined procedure
+*
+Undefined procedure
+
+===
+
+223
+B
+Bead
+B
+Bead
+B
+Bead
+B
+Bead
+B
+Bead
+
+===
+
+221
+Coff
+Cast off define method
+Coff
+Cast off define method
+Coff
+Cast off define method
+Coff
+Cast off define method
+Coff
+Cast off define method
+
+222
+Coff
+Cast off define method
+Coff
+Cast off define method
+Coff
+Cast off define method
+Coff
+Cast off define method
+Coff
+Cast off define method
+
+===
+
+44
+-
+No stitch
+-
+No stitch
+-
+No stitch
+-
+No stitch
+-
+-
+
+248
+-
+No stitch
+-
+No stitch
+-
+No stitch
+-
+No stitch
+-
+-
+
+===
+
+127
+-
+End of row
+-
+End of row
+-
+End of row
+-
+End of row
+-
+-
+
+===
+
+60
+Trn
+Turn
+Trn
+Turn
+Trn
+Turn
+Trn
+Turn
+Trn
+Turn (short row)
+
+62
+Trn
+Turn
+Trn
+Turn
+Trn
+Turn
+Trn
+Turn
+Trn
+Turn (short row)
+
+===
+
+249
+L
+Leftwards
+R
+Rightwards
+L
+Leftwards
+R
+Rightwards
+L
+Leftwards
+
+250
+R
+Rightwards
+L
+Leftwards
+R
+Rightwards
+L
+Leftwards
+R
+Rightwards
+
+251
+U
+Upwards
+U
+Upwards
+U
+Upwards
+U
+Upwards
+U
+Upwards
+
+252
+D
+Downwards
+D
+Downwards
+D
+Downwards
+D
+Downwards
+D
+Downwards
+
+
