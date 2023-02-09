@@ -1687,21 +1687,232 @@ Left-slanting double decrease
 
 ===
 
+238
+K2togtbl
+Knit 2 stitches together through back of loops
+P2togtbl
+Purl 2 stitches together through back of loops
+P2togtbl
+Purl 2 stitches together through back of loops
+K2togtbl
+Knit 2 stitches together through back of loops
+-
+-
 
+239
+P2togtbl
+Purl 2 stitches together through back of loops
+K2tog
+Knit 2 stitches together
+K2togtbl
+Knit 2 stitches together through back of loops
+P2tog
+Purl 2 stitches together
+-
+-
 
+===
 
+240
+K3togtbl
+Knit 3 together through back of loops
+P3tog
+Purl 3 together
+P3tog
+Purl 3 together
+K3togtbl
+Knit 3 together through back of loops
+-
+-
 
+241
+P3tog
+Purl 3 together
+K3togtbl
+Knit 3 together through back of loops
+K3togtbl
+Knit 3 together through back of loops
+P3tog
+Purl 3 together
+-
+-
 
+===
 
+242
+K4togtbl
+Knit 4 together through back of loops
+P4tog
+Purl 4 together
+P4tog
+Purl 4 together
+K4togtbl
+Knit 4 together through back of loops
+-
+-
 
+243
+P4tog
+Purl 4 together
+K4togtbl
+Knit 4 together through back of loops
+K4togtbl
+Knit 4 together through back of loops
+P4tog
+Purl 4 together
+-
+-
 
+===
 
+244
+K5togtbl
+Knit 5 together through back of loops
+P5tog
+Purl 5 together
+P5tog
+Purl 5 together
+K5togtbl
+Knit 5 together through back of loops
+-
+-
 
+245
+P5tog
+Purl 5 together
+K5togtbl
+Knit 5 together through back of loops
+K5togtbl
+Knit 5 together through back of loops
+P5tog
+Purl 5 together
+-
+-
 
+===
 
+246
+K*togtbl
+Knit n together through back of loops
+P*tog
+Purl n together
+P*tog
+Purl n together
+K*togtbl
+Knit n together through back of loops
+-
+-
 
+247
+P*tog
+Purl n together
+K*togtbl
+Knit n together through back of loops
+K*togtbl
+Knit n together through back of loops
+P*tog
+Purl n together
+-
+-
 
+===
 
+150
+YRincR
+Yarn round needle, Knit into next stitch
+YRincPR
+Yarn round needle, Purl into next stitch
+YRincPR
+Yarn round needle, Purl into next stitch
+YRincR
+Yarn round needle, Knit into next stitch
+WrpIncR
+Bring additional needle into WP at right end of needle bed so yarn will wrap on next pass
 
+151
+YRincL
+Yarn round needle, Knit into next stitch
+YRincPL
+Yarn round needle, Purl into next stitch
+YRincPL
+Yarn round needle, Purl into next stitch
+YRincL
+Yarn round needle, Knit into next stitch
+WrpInmcL
+Bring additional needle into WP at left end of needle bed so yarn will wrap on next pass
 
+152
+YRincPR
+Yarn round needle, Purl into next stitch
+YRincR
+Yarn round needle, Knit into next stitch
+YRincR
+Yarn round needle, Knit into next stitch
+YRincPR
+Yarn round needle, Purl into next stitch
+-
+-
 
+153
+YRincPL
+Yarn round needle, Purl into next stitch
+YRincL
+Yarn round needle, Knit into next stitch
+YRincL
+Yarn round needle, Knit into next stitch
+YRincPL
+Yarn round needle, Purl into next stitch
+-
+-
+
+===
+
+154
+YRDecR
+Yarn round needle, Knit next three stitches together
+YRDecPR
+Yarn round needle, Purl next three stitches together
+YRDecPR
+Yarn round needle, Purl next three stitches together
+YRDecR
+Yarn round needle, Knit next three stitches together
+WrpDecR
+Transfer rightmost two stitches to third needle in, return end needle to NWP and leave 2nd in WP so yarn will wrap on next pass
+
+155
+YRDecL
+Yarn round needle, Knit next three stitches together
+YRDecPL
+Yarn round needle, Purl next three stitches together
+YRDecPL
+Yarn round needle, Purl next three stitches together
+YRDecL
+Yarn round needle, Knit next three stitches together
+WrpDecL
+Transfer lefttmost two stitches to third needle in, return end needle to NWP and leave 2nd in WP so yarn will wrap on next pass
+
+162
+YRDecPR
+Yarn round needle, Purl next three stitches together
+YRDecR
+Yarn round needle, Knit next three stitches together
+YRDecR
+Yarn round needle, Knit next three stitches together
+YRDecPR
+Yarn round needle, Purl next three stitches together
+-
+-
+
+163
+YRDecPL
+Yarn round needle, Purl next three stitches together
+YRDecL
+Yarn round needle, Knit next three stitches together
+YRDecL
+Yarn round needle, Knit next three stitches together
+YRDecPL
+Yarn round needle, Purl next three stitches together
+-
+-
+
+===

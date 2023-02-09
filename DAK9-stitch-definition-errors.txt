@@ -3,3 +3,4 @@ DAK9 definitions with typos/errors:
 133,167 (stitch definitions should be different for stocking stitch and reverse stocking stitch)
 234,235 (4Inc should be 4IncP where purled)
 174,175 (K3togtble should be K3togtbl)
+238,239 (P2togtbl should be P2tog)
