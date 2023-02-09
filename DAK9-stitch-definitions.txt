@@ -86,6 +86,20 @@ Yarn over
 0
 Lace tool: eyelet
 
+96
+YO
+Yarn over
+YO
+Yarn over
+YO
+Yarn over
+YO
+Yarn over
+EN
+Empty Needle: after transfer, leave empty needle in working position
+
+===
+
 132
 SSK
 S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
@@ -110,29 +124,33 @@ S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
 LTtrR
 Lace tool: right transfer
 
+===
+
 134
 KS-PSSO
 Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. S1 Purlwise
 PS-PSSO
-Purl 1, Slip 1 knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch over. Slip 1 purlwise
+Purl 1, Slip 1 Knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch over. Slip 1 Purlwise
 SP-PSSO
-Slip 1 purlwise, Purl 1, Pass Slip Stitch Over
+Slip 1 Purlwise, Purl 1, Pass Slip Stitch Over
 SK-PSSO
-Slip 1 knitwise, Knit 1, Pass Slip Stitch Over
+Slip 1 Knitwise, Knit 1, Pass Slip Stitch Over
 LTdecR
 Lace tool: right decrease
 
 135
 SK-PSSO
-Slip 1 knitwise, Knit 1, Pass Slip Stitch Over
+Slip 1 Knitwise, Knit 1, Pass Slip Stitch Over
 SP-PSSO
-Slip 1 purlwise, Purl 1, Pass Slip Stitch Over
+Slip 1 Purlwise, Purl 1, Pass Slip Stitch Over
 PS-PSSO
-Purl 1, Slip 1 knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch 
+Purl 1, Slip 1 Knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch 
 KS-PSSO
 Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. Slip 1 Purlwise
 LTdecL
 Lace tool: left decrease
+
+===
 
 136
 S2K-PSSO
@@ -145,6 +163,8 @@ S2K-PSSO
 Slip 2 together Knitwise, Knit 1, Pass 2 Slipped Stitches Over
 LTdbldec
 Lace tool: double decrease
+
+===
 
 137
 -
@@ -234,6 +254,8 @@ Weave Over
 WO
 Weave Over
 
+===
+
 53
 PUF
 Pick up float
@@ -320,6 +342,8 @@ Purl through back of loop
 -
 -
 
+===
+
 47
 K1R
 Knit, taking yarn over rather than under needle
@@ -369,6 +393,8 @@ s1P
 Slip stitch Purlwise
 -
 -
+
+===
 
 123
 yif, S1K
@@ -482,19 +508,6 @@ Cast on with Waste Yarn
 
 ===
 
-96
-YO
-Yarn over
-YO
-Yarn over
-YO
-Yarn over
-YO
-Yarn over
-EN
-Empty Needle: after transfer, leave empty needle in working position
-
-===
 
 178
 twyo
@@ -996,9 +1009,683 @@ Purl, Knit, Purl into next stitch
 
 ===
 
+118
+LS
+Knit, wrapping yarn twice around needle
+LSP
+Purl, wrapping yarn twice around needle
+LSP
+Purl, wrapping yarn twice around needle
+LS
+Knit, wrapping yarn twice around needle
+-
+-
 
+86
+LSP
+Purl, wrapping yarn twice around needle
+LS
+Knit, wrapping yarn twice around needle
+LS
+Knit, wrapping yarn twice around needle
+LSP
+Purl, wrapping yarn twice around needle
+-
+-
 
+===
 
+98
+DLS
+Knit, wrapping yarn three times around needle
+DLSP
+Purl, wrapping yarn three times around needle
+DLSP
+Purl, wrapping yarn three times around needle
+DLS
+Knit, wrapping yarn three times around needle
+-
+-
+
+66
+DLSP
+Purl, wrapping yarn three times around needle
+DLS
+Knit, wrapping yarn three times around needle
+DLS
+Knit, wrapping yarn three times around needle
+DLSP
+Purl, wrapping yarn three times around needle
+-
+-
+
+===
+
+224
+YRN3
+Knit, wrapping yarn 3 times round needle
+YRN3P
+Purl, wrapping yarn 3 times round needle
+YRN3P
+Purl, wrapping yarn 3 times round needle
+YRN3
+Knit, wrapping yarn 3 times round needle
+-
+-
+
+225
+YRN3P
+Purl, wrapping yarn 3 times round needle
+YRN3
+Knit, wrapping yarn 3 times round needle
+YRN3
+Knit, wrapping yarn 3 times round needle
+YRN3P
+Purl, wrapping yarn 3 times round needle
+-
+-
+
+===
+
+226
+YRN4
+Knit, wrapping yarn 4 times round needle
+YRN4P
+Purl, wrapping yarn 4 times round needle
+YRN4P
+Purl, wrapping yarn 4 times round needle
+YRN4
+Knit, wrapping yarn 4 times round needle
+-
+-
+
+227
+YRN4P
+Purl, wrapping yarn 4 times round needle
+YRN4
+Knit, wrapping yarn 4 times round needle
+YRN4
+Knit, wrapping yarn 4 times round needle
+YRN4P
+Purl, wrapping yarn 4 times round needle
+-
+-
+
+===
+
+228
+YRN*
+Knit, wrapping yarn round needle
+YRN*P
+Purl, wrapping yarn round needle
+YRN*P
+Purl, wrapping yarn round needle
+YRN*
+Knit, wrapping yarn round needle
+-
+-
+
+229
+YRN*P
+Purl, wrapping yarn round needle
+YRN*
+Knit, wrapping yarn round needle
+YRN*
+Knit, wrapping yarn round needle
+YRN*P
+Purl, wrapping yarn round needle
+-
+-
+
+===
+
+102
+Meld-L
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-RP
+Slip next stitch Purlwise and use right needle point to lift head of stitch below next one on left needle. Slip left needle through the back of the loops and P2tog
+Meld-LP
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into back of both loops and P2tog
+Meld-R
+Slip next stitch Purlwise onto right needle. Use right needle to lift head of stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LP
+Pick up wrap or loop from row below on left needle and place on right needle
+
+103
+Meld-R
+Slip next stitch Purlwise onto right needle. Use right needle to lift head of stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LP
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into back of both loops and P2tog
+Meld-RP
+Slip next stitch Purlwise and use right needle point to lift head of stitch below next one on left needle. Slip left needle through the back of the loops and P2tog
+Meld-L
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-R
+Pick up wrap or loop from row below on right needle and place on left needle
+
+70
+Meld-LP
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into back of both loops and P2tog
+Meld-R
+Slip next stitch Purlwise onto right needle. Use right needle to lift head of stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-L
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-RP
+Slip next stitch Purlwise and use right needle point to lift head of stitch below next one on left needle. Slip left needle through the back of the loops and P2tog
+Meld-LP
+Pick up wrap or loop from row below on left needle and place on right needle
+
+71
+Meld-RP
+Slip next stitch Purlwise and use right needle point to lift head of stitch below next one on left needle. Slip left needle through the back of the loops and P2tog
+Meld-L
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-R
+Slip next stitch Purlwise onto right needle. Use right needle to lift head of stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LP
+Use left needle to pick up head of last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into back of both loops and P2tog
+Meld-RP
+Pick up wrap or loop from row below on right needle and place on left needle
+
+===
+
+168
+Meld-LB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-RPB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-LPB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-RB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+-
+-
+
+169
+Meld-RB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LPB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-RPB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+-
+-
+
+170
+Meld-LPB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-RB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-RPB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+-
+-
+
+171
+Meld-RPB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-LB
+Use left needle to pull loop through stitch below last stitch on right needle, and replace on right needle, Slip 1 Purlwise, insert left needle into both loops and K2tog tbl
+Meld-RB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+Meld-LPB
+Slip next stitch Purlwise onto right needle. Use right needle to pull loop through stitch below next stitch on left needle. Insert left needle into both loops and K2tog tbl
+-
+-
+
+===
+
+232
+TrpInc
+Knit into front and back of next stitch twice
+TrpIncP
+Purl into front and back of next stitch twice
+TrpIncP
+Purl into front and back of next stitch twice
+TrpInc
+Knit into front and back of next stitch twice
+-
+-
+
+233
+TrpIncP
+Purl into front and back of next stitch twice
+TrpInc
+Knit into front and back of next stitch twice
+TrpInc
+Knit into front and back of next stitch twice
+TrpIncP
+Purl into front and back of next stitch twice
+-
+-
+
+===
+
+234
+4Inc
+Knit into front and back of next stitch twice and into front again
+4IncP
+Purl into front and back of next stitch twice and into front again
+4IncP
+Purl into front and back of next stitch twice and into front 
+4Inc
+Knit into front and back of next stitch twice and into front again
+-
+-
+
+235
+4IncP
+Purl into front and back of next stitch twice and into front 
+4Inc
+Knit into front and back of next stitch twice and into front again
+4Inc
+Knit into front and back of next stitch twice and into front again
+4IncP
+Purl into front and back of next stitch twice and into front again
+-
+-
+
+===
+
+236
+*Inc
+Knit into front then back of next stitch n times
+*IncP
+Purl into front then back of next stitch n times
+*IncP
+Purl into front then back of next stitch n times
+*Inc
+Knit into front then back of next stitch n times
+-
+-
+
+237
+*IncP
+Purl into front then back of next stitch n times
+*Inc
+Knit into front then back of next stitch n times
+*Inc
+Knit into front then back of next stitch n times
+*IncP
+Purl into front then back of next stitch n times
+-
+-
+
+===
+
+145
+Dec
+Single Decrease
+Dec1P
+Single Purl decrease
+Dec1P
+Single Purl decrease
+Dec
+Single Decrease
+Dec
+Single Decrease
+
+147
+Dec1P
+Single Purl decrease
+Dec
+Single Decrease
+Dec
+Single Decrease
+Dec1P
+Single Purl decrease
+Dec
+Single Decrease
+
+===
+
+121
+K2tog
+Knit 2 together
+SSPtbl
+Slip 1 Knitwise twice. Insert left needle from front through both stitches and slip back onto left needle then P2tog tbl
+P2tog
+Purl 2 together
+SSK
+S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
+DecR
+Right-slanting decrease
+
+117
+SSK
+S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
+P2tog
+Purl 2 together
+SSPtbl
+Slip 1 Knitwise twice. Insert left needle from front through both stitches and slip back onto left needle then P2tog tbl
+K2tog
+Knit 2 together
+DecL
+Left-slanting decrease
+
+89
+P2tog
+Purl 2 together
+SSK
+S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
+K2tog
+Knit 2 together
+SSPtbl
+Slip 1 Knitwise twice. Insert left needle from front through both stitches and slip back onto left needle then P2tog tbl
+DecR
+Right-slanting decrease
+
+85
+SSPtbl
+Slip 1 Knitwise twice. Insert left needle from front through both stitches and slip back onto left needle then P2tog tbl
+K2tog
+Knit 2 together
+SSK
+S1 Knitwise twice. Insert left needle from back through both stitches and K2tog
+P2tog
+Purl 2 together
+DecL
+Left-slanting decrease
+
+===
+
+105
+KS-PSSO
+Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. S1 Purlwise
+PS-PSSO
+Purl 1, Slip 1 Knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch over. Slip 1 Purlwise
+SP-PSSO
+Slip 1 Purlwise, Purl 1, Pass Slip Stitch Over
+SK-PSSO
+Slip 1 Knitwise, Knit 1, Pass Slip Stitch Over
+DecR
+Right-slanting decrease
+
+111
+SK-PSSO
+Slip 1 Knitwise, Knit 1, Pass Slip Stitch Over
+SP-PSSO
+Slip 1 Purlwise, Purl 1, Pass Slip Stitch Over
+PS-PSSO
+Purl 1, Slip 1 Knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch 
+KS-PSSO
+Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. Slip 1 Purlwise
+DecL
+Left-slanting decrease
+
+73
+SP-PSSO
+Slip 1 Purlwise, Purl 1, Pass Slip Stitch Over
+SK-PSSO
+Slip 1 Knitwise, Knit 1, Pass Slip Stitch Over
+KS-PSSO
+Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. S1 Purlwise
+PS-PSSO
+Purl 1, Slip 1 Knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch over. Slip 1 Purlwise
+DecR
+Right-slanting decrease
+
+79
+PS-PSSO
+Purl 1, Slip 1 Knitwise and return to left needle. Slip purled stitch back to left needle without twisting and then pass slipped stitch 
+KS-PSSO
+Knit 1, slip back onto left needle without twisting, use right needle to lift second stitch over slipped stitch. Slip 1 Purlwise
+SK-PSSO
+Slip 1 Knitwise, Knit 1, Pass Slip Stitch Over
+SP-PSSO
+Slip 1 Purlwise, Purl 1, Pass Slip Stitch Over
+DecL
+Left-slanting decrease
+
+===
+
+112
+S2K-PSSO
+Slip 2 together Knitwise, Knit 1, Pass 2 Slipped Stitches Over
+SSP1-PSSO
+Slip 1 Knitwise twice, then return stitches to left needle. Insert right needle from back and slip 2 together onto right needle. Purl 1 and Pass Slipped Stitches Over
+SSP1-PSSO
+Slip 1 Knitwise twice, then return stitches to left needle. Insert right needle from back and slip 2 together onto right needle. Purl 1 and Pass Slipped Stitches Over
+S2K-PSSO
+Slip 2 together Knitwise, Knit 1, Pass 2 Slipped Stitches Over
+DbleDec
+Double Decrease
+
+80
+SSP1-PSSO
+Slip 1 Knitwise twice, then return stitches to left needle. Insert right needle from back and slip 2 together onto right needle. Purl 1 and Pass Slipped Stitches Over
+S2K-PSSO
+Slip 2 together Knitwise, Knit 1, Pass 2 Slipped Stitches Over
+S2K-PSSO
+Slip 2 together Knitwise, Knit 1, Pass 2 Slipped Stitches Over
+SSP1-PSSO
+Slip 1 Knitwise twice, then return stitches to left needle. Insert right needle from back and slip 2 together onto right needle. Purl 1 and Pass Slipped Stitches Over
+DbleDec
+Double Decrease
+
+===
+
+104
+SSK2tog
+S1 Knitwise twice, slip back to left needle and K2tog
+P2togtbl
+Purl 2 together through back of loops
+SSP2tog
+Slip 1 Knitwise twice, slip back to left needle and P2tog
+K2togtbl
+Knit two together through back of loops
+-
+-
+
+106
+K2togtbl
+Knit two together through back of loops	
+SSP2tog
+Slip 1 Knitwise twice, slip back to left needle and P2tog
+P2togtbl
+Purl 2 together through back of loops
+SSK2tog
+S1 Knitwise twice, slip back to left needle and K2tog
+-
+-
+
+72
+SSP2tog
+Slip 1 Knitwise twice, slip back to left needle and P2tog
+K2togtbl
+Knit two together through back of loops	
+SSK2tog
+S1 Knitwise twice, slip back to left needle and K2tog
+P2togtbl
+Purl 2 together through back of loops
+-
+-
+
+74
+P2togtbl
+Purl 2 together through back of loops
+SSK2tog
+S1 Knitwise twice, slip back to left needle and K2tog
+K2togtbl
+Knit two together through back of loops	
+SSP2tog
+Slip 1 Knitwise twice, slip back to left needle and P2tog
+-
+-
+
+===
+
+107
+SSK
+S1 Knitwise twice. Insert left needle from front through both stitches and K2togtbl
+P2togS-PSSOS
+Purl 2 tog, Slip 1 Knitwise and return to left needle. Slip P2tog back to left needle and Pass Slipped Stitch Over. Slip 1 Purlwise
+SP2togtbl-PSSO
+S1 Purlwise, P2togtbl and Pass Slipped Stitch Over
+SK2-PSSO
+S1 Knitwise, K2tog, Pass Slipped Stitch Over
+DblDecR
+Right-slanting double decrease
+
+108
+SK2-PSSO
+S1 Knitwise, K2tog, Pass Slipped Stitch Over
+SP2togtbl-PSSO
+S1 Purlwise, P2togtbl and Pass Slipped Stitch Over
+P2togS-PSSOS
+Purl 2 tog, Slip 1 Knitwise and return to left needle. Slip P2tog back to left needle and Pass Slipped Stitch Over. Slip 1 Purlwise
+SSK
+S1 Knitwise twice. Insert left needle from front through both stitches and K2togtbl
+DblDecL
+Left-slanting double decrease
+
+75
+SP2togtbl-PSSO
+S1 Purlwise, P2togtbl and Pass Slipped Stitch Over
+SK2-PSSO
+S1 Knitwise, K2tog, Pass Slipped Stitch Over
+SSK
+S1 Knitwise twice. Insert left needle from front through both stitches and K2togtbl
+P2togS-PSSOS
+Purl 2 tog, Slip 1 Knitwise and return to left needle. Slip P2tog back to left needle and Pass Slipped Stitch Over. Slip 1 Purlwise
+DblDecR
+Right-slanting double decrease
+
+76
+P2togS-PSSOS
+Purl 2 tog, Slip 1 Knitwise and return to left needle. Slip P2tog back to left needle and Pass Slipped Stitch Over. Slip 1 Purlwise
+SSK
+S1 Knitwise twice. Insert left needle from front through both stitches and K2togtbl
+SK2-PSSO
+S1 Knitwise, K2tog, Pass Slipped Stitch Over
+SP2togtbl-PSSO
+S1 Purlwise, P2togtbl and Pass Slipped Stitch Over
+DblDecL
+Left-slanting double decrease
+
+===
+
+110
+SSSK
+S1 knitwise 3 times. Insert left needle from back through all 3 stitches and K3tog
+P3tog
+Purl 3 together
+SSSPtbl
+Slip 1 knitwise 3 times. Insert left needle from front through all 3 stitches and slip back onto left needle then P3togtbl
+K3tog
+Knit 3 together
+DblDecL
+Left-slanting double decrease
+
+109
+K3tog
+Knit 3 together
+SSSPtbl
+Slip 1 knitwise 3 times. Insert left needle from front through all 3 stitches and slip back onto left needle then P3togtbl
+P3tog
+Purl 3 together
+SSSK
+S1 knitwise 3 times. Insert left needle from back through all 3 stitches and K3tog
+DblDecR
+Right-slanting double decrease
+
+77
+SSSPtbl
+Slip 1 knitwise 3 times. Insert left needle from front through all 3 stitches and slip back onto left needle then P3togtbl
+K3tog
+Knit 3 together
+SSSK
+S1 knitwise 3 times. Insert left needle from back through all 3 stitches and K3tog
+DblDecR
+Right-slanting double decrease
+P3tog
+Purl 3 together
+
+78
+P3tog
+Purl 3 together
+SSSK
+S1 knitwise 3 times. Insert left needle from back through all 3 stitches and K3tog
+K3tog
+Knit 3 together
+SSSPtbl
+Slip 1 knitwise 3 times. Insert left needle from front through all 3 stitches and slip back onto left needle then P3togtbl
+DblDecL
+Left-slanting double decrease
+
+===
+
+174
+K3togtbl
+Knit 3 together through back of loops
+SSSPtbl
+Slip 1 Knitwise 3 times. Return to left needle and P3 tog tbl
+P3togtbl
+Purl 3 together through back of loops
+SSSKtbl
+Slip 1 Knitwise 3 times. Return to left needle and K3 tog tbl
+
+175
+SSSKtbl
+Slip 1 Knitwise 3 times. Return to left needle and K3 tog tbl
+P3togtbl
+Purl 3 together through back of loops
+SSSPtbl
+Slip 1 Knitwise 3 times. Return to left needle and P3 tog tbl
+K3togtbl
+Knit 3 together through back of loops
+
+172
+P3togtbl
+Purl 3 together through back of loops
+SSSKtbl
+Slip 1 Knitwise 3 times. Return to left needle and K3 tog tbl
+K3togtbl
+Knit 3 together through back of loops
+SSSPtbl
+Slip 1 Knitwise 3 times. Return to left needle and P3 tog tbl
+
+173
+SSSPtbl
+Slip 1 Knitwise 3 times. Return to left needle and P3 tog tbl
+K3togtbl
+Knit 3 together through back of loops
+SSSKtbl
+Slip 1 Knitwise 3 times. Return to left needle and K3 tog tbl
+P3togtbl
+Purl 3 together through back of loops
+
+===
+
+141
+DblDecR
+Right-slanting double decrease
+DblDecL
+Left-slanting double decreases
+DblDecR
+Right-slanting double decrease
+DblDecL
+Left-slanting double decrease
+DblDecR
+Right-slanting double decrease
+
+142
+DblDecL
+Left-slanting double decrease
+DblDecR
+Right-slanting double decrease
+DblDecL
+Left-slanting double decrease
+DblDecR
+Right-slanting double decrease
+DblDecL
+Left-slanting double decrease
+
+===
 
 
 
