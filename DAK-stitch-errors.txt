@@ -1,0 +1,3 @@
+DAK9 definitions with typos/errors:
+113,81 (DbleIncFBF should be DbleIncKFBF)
+133,167 (stitch definitions should be different for stocking stitch and reverse stocking stitch)
