@@ -4,20 +4,17 @@ The header is the first 0xF8 bytes of the file and is unencrypted. Changes
 between files are most easily viewed in a hex editor.
 
 Listed below are some of the important locations in the header.
-There are various other parameters that can be left as default values.
-Nobody cares if the font for the colour names is Arial or Calibri.
+
+Byte 0x20 and bytes 0x35 and up are used in obfuscation. Changing any of
+these values will screw up the file.
 
 Some of the options require validation in the DAK GUI. For example, the
 colour Jacquard options cannot be selected if the pattern contains too
 few colours.
 
-## Miscellaneous
-* "Magic numbers" - location 0x00=0x633744 ('D7c'), 0x20=0x46, 0x35=0x00989680, 0x39=0x0000007B
-* Random number - location 0x3D, 16 bit word. seems to vary unpredictably between files. used in obfuscation.
-
 ## Dimensions
 * Height - locations 0x03 0x07, 16 bit word
-* Width - locations 0x05 0x09 0x15, 16 bit word
+* Width - locations 0x05 0x09, 16 bit word
 
 ## Repeats
 * Horizontal repeats - location 0x0B, 16 bit word
@@ -32,8 +29,9 @@ few colours.
 		0x05 machine 5 colour Jacquard,
                 0x06 machine 6 colour Jacquard,
 		0x0C hand knitting,
-		0x0E machine RS texture,
+		0x0E machine RS texture
 		0x0F machine WS texture
+
 * location 0xEA=0x00 flat knit,
 		0x01 circular knit
 * location 0xE9=0x00 row 1 starts RHS,
@@ -50,3 +48,11 @@ few colours.
 ## Machine knitting options
 * location 0xEE=0x00 colour changer off,
 		0x01 colour changer on
+
+## Font
+* location 0xB1=0x6C61697241 ('Arial')
+
+## Miscellaneous
+* "Magic number" - location 0x00=0x633744 ('D7c'),
+* Version info (?) - 0x39=0x0000007B, 0xD8=0x12. Older files may have different values, e.g. 0x000003E7, 0x00.
+* Random number - location 0x3D, 16 bit word
