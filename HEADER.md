@@ -12,8 +12,7 @@ colour Jacquard options cannot be selected if the pattern contains too
 few colours.
 
 ## Miscellaneous
-* "Magic number" - location 0x00. 24 bit value 0x633744 ('D7c')
-* location 0x20=0x46 ('F')
+* "Magic numbers" - location 0x00=0x633744 ('D7c'), 0x20=0x46, 0x35=0x00989680, 0x39=0x0000007B
 * Random number - location 0x3D, 16 bit word. seems to vary unpredictably between files. used in obfuscation.
 
 ## Dimensions
@@ -51,6 +50,3 @@ few colours.
 ## Machine knitting options
 * location 0xEE=0x00 colour changer off,
 		0x01 colour changer on
-
-## Other
-* units of measurement location 0x28=0x00 cm, 0x01 inches

@@ -183,9 +183,6 @@ class DAKPatternConverter:
             print(rgb, file=sys.stderr)
         return Image.fromarray(rgb, mode = 'RGB')
 
-    def __output_data(self):
-        return self.output_data
-
     def __exit(self, msg, return_code):
         print(msg)
         # self.status = return_code
@@ -310,11 +307,12 @@ class DAKPatternConverter:
         # return self.status
         return self.__output_im()
 
-    def __calc_key(data):
+    def __calc_key(self, data):
 
         def __appendKeystring(next_string, max_size):
             return (keystring + next_string)[0:max_size]
 
+        max_xor_len = 21000
         key1 = (getDWordAt(data, 0x35) >> 1)
         key1 += (getWordAt(data, 0x3F) << 2)
         key1 += getDWordAt(data, 0x39) 
@@ -371,7 +369,7 @@ class DAKPatternConverter:
     # read DAK .stp file and return de-obfuscated data
     def stp2dat(self, filename):
         self.__decode_stp(filename)
-        return self.__output_data
+        return self.output_data
 
     # read DAK .stp file and return a PIL.Image object
     def stp2im(self, filename):
@@ -381,14 +379,14 @@ class DAKPatternConverter:
     # deobfuscate DAK .stp file
     def __decode_stp(self, filename):
 
-    def __decrypt_blocks(pos):
-        blocks = []
-        while True:
-            block = STPBlock(input_data, pos, xorkey)
-            blocks.append(block)
-            pos += block.size + 4
-            if block.height == self.height:
-                return blocks, pos
+        def __decrypt_blocks(pos):
+            blocks = []
+            while True:
+                block = STPBlock(input_data, pos, xorkey)
+                blocks.append(block)
+                pos += block.size + 4
+                if block.height == self.height:
+                    return blocks, pos
 
         # decode run length encoding of color and stitch patterns
         def __decode_runs(data, blocks, offset):
@@ -419,7 +417,6 @@ class DAKPatternConverter:
             return output
 
         ## constants
-        max_xor_len = 21000
         color_blocks_start = 0xF8
         color_data_size = 1775 ## 71 colors * 25 bytes
         #
@@ -432,7 +429,7 @@ class DAKPatternConverter:
         # self.status = 0
         #
         ## calculate key for decryption
-        xorkey = __calc_key(input_data)
+        xorkey = self.__calc_key(input_data)
         #
         ## decrypt data blocks
         color_blocks, stitch_blocks_start = __decrypt_blocks(color_blocks_start)
@@ -452,11 +449,8 @@ class DAKPatternConverter:
             # print(self.colors)
         #
         ## output data
-        self_output_data = input_data[0:0xF8] + 
-            self.color_pattern +
-            self.stitch_pattern +
-            input_data[color_data_start:stitch_data_start] +
-            input_data[stitch_data_start:stitch_data_start + 96]
+        self.output_data = input_data[0:0xF8] + bytearray(self.color_pattern) + bytearray(self.stitch_pattern) + input_data[
+            color_data_start:stitch_data_start] + input_data[stitch_data_start:stitch_data_start + 96]
         #
         # return self.status
 
@@ -473,33 +467,32 @@ class DAKPatternConverter:
     #     else:
     #         self.data = buffer[start + 4:start + 4 + self.size]
 
-    def __encrypt_blocks(pos):
-        blocks = []
-        while True:
-            block = STPBlock(input_data, pos, xorkey)
-            blocks.append(block)
-            pos += block.size + 4
-            if block.height == self.height:
-                return blocks, pos
+        def __encrypt_blocks(pos):
+            blocks = []
+            while True:
+                block = STPBlock(input_data, pos, xorkey)
+                blocks.append(block)
+                pos += block.size + 4
+                if block.height == self.height:
+                    return blocks, pos
 
-        # perform run length encoding of color and stitch patterns
-        def __encode_runs(data, blocks, offset):
-            length = 0
-            for row in range(self.height):
-                length += blocks[row].size + 4
-            output = np.zeros(length, np.uint8)
-            pos = 0
-            for row in range(self.height):
-                s = block[row].size
-                putWordAt(output, pos, block[row].height)
-                putWordAt(output, pos, s)
-                for i in range(s):
-                    output[pos + 4 + i] = block[row].data[i]
-                pos += s
-            return output
+            # perform run length encoding of color and stitch patterns
+            def __encode_runs(data, blocks, offset):
+                length = 0
+                for row in range(self.height):
+                    length += blocks[row].size + 4
+                output = np.zeros(length, np.uint8)
+                pos = 0
+                for row in range(self.height):
+                    s = block[row].size
+                    putWordAt(output, pos, block[row].height)
+                    putWordAt(output, pos, s)
+                    for i in range(s):
+                        output[pos + 4 + i] = block[row].data[i]
+                    pos += s
+                return output
 
         ## constants
-        max_xor_len = 21000
         color_blocks_start = 0xF8
         color_data_size = 1775 ## 71 colors * 25 bytes
         #
@@ -509,7 +502,7 @@ class DAKPatternConverter:
         # self.status = 0
         #
         ## calculate key for decryption
-        xorkey = __calc_key(input_data)
+        xorkey = self.__calc_key(input_data)
         #
         ## encrypt data blocks
         color_blocks, stitch_blocks_start = __encrypt_blocks(color_blocks_start)
@@ -527,14 +520,11 @@ class DAKPatternConverter:
             # print(self.colors)
         #
         ## output data
-        self_output_data = input_data[0:0xF8] + 
-            self.color_pattern +
-            self.stitch_pattern +
-            input_data[color_data_start:stitch_data_start] +
-            input_data[stitch_data_start:stitch_data_start + 96]
+        self_output_data = input_data[0:0xF8] + bytearray(self.color_pattern) + bytearray(self.stitch_pattern) + input_data[
+            color_data_start:stitch_data_start] + input_data[stitch_data_start:stitch_data_start + 96]
         #
         # return self.status
         self.__decode_stp(filename)
-        return self.__output_data
+        return self.output_data
 
 # end of DAKPatternConverter class definition
