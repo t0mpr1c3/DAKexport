@@ -46,13 +46,13 @@ few colours.
 		0x03 garter stitch (P)
 
 ## Machine knitting options
-* location 0xEE=0x00 colour changer off,
-		0x01 colour changer on
+* location 0xEE=0x01 colour changer on,
+		0x02 colour changer off
 
 ## Font
 * location 0xB1=0x6C61697241 ('Arial')
 
 ## Miscellaneous
 * "Magic number" - location 0x00=0x633744 ('D7c'),
-* Version info (?) - 0x39=0x0000007B, 0xD8=0x12. Older files may have different values, e.g. 0x000003E7, 0x00.
+* Version info (?) - 0x39=0x0000007B, 0xD8=0x12. Older files may have different values, e.g. 0x000003E7, 0x00.	
 * Random number - location 0x3D, 16 bit word

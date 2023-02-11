@@ -1,10 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/python env
 
 import sys
 import numpy as np
 from collections import Counter
 from PIL import Image
-# import png
 
 
 def signExt_b2d(x):
@@ -19,7 +18,7 @@ def getWordAt(data, i):
 def getDWordAt(data, i):
     return getWordAt(data, i) + (getWordAt(data, i + 2) << 16)
 
-def putWordAt(data, i, x):
+def putWordAt(data : bytearray, i, x):
     data[i] = x & 0xFF
     data[i + 1] = x >> 8
 
@@ -27,6 +26,49 @@ def putWordAt(data, i, x):
 def getStringAt(data, i):
     size = getByteAt(data, i)
     return data[i + 1:i + size + 1].decode()
+
+# run length encoding of color and stitch patterns
+def rle(input : bytes, offset = 0):
+    n = len(input)
+    output = bytearray(n)
+    value = input[0] + offset
+    run = 0x81
+    i = 1 # index of input data
+    j = 0 # index of output data
+    while i < n:
+        next_value = input[i] + offset
+        if value == next_value:
+            run += 1
+            i += 1
+            if run == 0xFF:
+                output[j] = run
+                output[j + 1] = value
+                if i == n:
+                    return output[:j + 2]
+                j += 2
+                value = next_value
+                i += 1
+                run = 0x81
+        else:
+            if run == 0x81:
+                output[j] = value
+                j += 1
+            else:
+                output[j] = run
+                output[j + 1] = value
+                j += 2
+            if i == n:
+                output[j] = next_value
+                return output[:j + 1]
+            value = next_value
+            i += 1
+            run = 0x81
+    if run == 0x81:
+        output[j] = value
+        return output[:j + 1]
+    output[j] = run
+    output[j + 1] = value
+    return output[:j + 2]
 
 
 class DAKColor:
@@ -98,6 +140,21 @@ class STPBlock:
 
 class DAKPatternConverter:
 
+    # constants
+    pat_max_x = 500
+    pat_max_y = 800
+    stp_max_x = 2000
+    stp_max_y = 3000
+    header_size = 0xF8
+    max_colors = 71
+    color_size = 25
+    color_data_size = max_colors * color_size ## 1775
+    color_gap = 13 ## color numbers below 13 don't work
+    max_stitches = 48
+    stitch_size = 2
+    stp_magic = b'D7c'
+    symbol_offset = 0x20
+
     def __init__(self, debug = True):
         self.filename = None
         self.height = None
@@ -108,10 +165,6 @@ class DAKPatternConverter:
         self.output_data = bytearray()
         self.colors = {}
         self.stitches = {}
-        # self.max_row_colors = 0
-        # self.col1 = 0
-        # self.col2 = 0x3C ## '<'
-        # self.status = 0
         self.debug = False
 
     def __read_file(self, filename):
@@ -144,19 +197,10 @@ class DAKPatternConverter:
         if self.width > w_max or self.height > h_max:
             self.__exit("dimensions are too big", -2)
 
-    def __find_col1(buffer, start):
-        pos = start
-        for i in range(0x47):
-            if buffer[pos] & 0x50 == 0x50:
-                return i
-            else:
-                pos += 0x19
-        return 0x20 ## default value for col1
-
-    ## block of color data after pattern block = 1775 bytes = 0x47 * 0x19
+    ## block of color data after pattern block = 1775 bytes = 71 colors * 25 bytes
     def __read_colors(self, buf, start):
         pos = start
-        for i in range(0x47):
+        for i in range(self.max_colors):
             b = buf[pos:pos + 0x1A]
             # if b[0] & 0x10 and b[1] > 0: ## works for .pat file
             if b[0] & 0x10: ## works for .stp file
@@ -165,12 +209,12 @@ class DAKPatternConverter:
                 self.colors[i] = new_color ## works for .stp file
                 if self.debug:
                     print("new_color '{}' {}".format(chr(i), new_color.string()))
-            pos += 0x19
+            pos += self.color_size
 
-    ## block of stitch data after pattern block = 96 bytes = 0x30 * 2
+    ## block of stitch data after pattern block = 96 bytes = 48 stitches * 2 bytes
     def __read_stitches(self, buf, start):
         pos = start
-        for i in range(0x30):
+        for i in range(self.max_stitches):
             k = buf[pos + 1]
             if k != 0:
                 j = buf[pos]
@@ -179,7 +223,7 @@ class DAKPatternConverter:
                 self.stitches[i + 1] = new_stitch
                 if self.debug:
                     print(f"new_stitch {new_stitch.string()}")
-            pos += 2
+            pos += self.stitch_size
 
     def __output_png(self):
         rgb = [[num for element in [self.colors[self.color_pattern[self.height - row - 1, column]].rgb \
@@ -196,8 +240,6 @@ class DAKPatternConverter:
 
     def __exit(self, msg, return_code):
         print(msg)
-        # self.status = return_code
-        # sys.exit(self.status)
         sys.exit(return_code)
 
     # read DAK .pat file and return a PIL.Image object
@@ -212,16 +254,12 @@ class DAKPatternConverter:
         #
         ## check data
         self.__check_header(input_data[0:3], (b'D4C', b'D6C'))
-        self.__check_dims(input_data, 0x13A, 0x13C, 500, 800)
-        # self.status = 0
+        self.__check_dims(input_data, 0x13A, 0x13C, self.pat_max_x, self.pat_max_y)
         #
         ## decode run length encoding of color pattern
-        ## count colors
         self.color_pattern = np.zeros((self.height, self.width,), np.uint8)
         pos = pattern_start
-        # all_colors = set()
         for row in range(self.height):
-            row_colors = set()
             column = 0
             while column < self.width:
                 run = 1
@@ -231,35 +269,13 @@ class DAKPatternConverter:
                     run = color & 0x7F
                     color = getByteAt(input_data, pos)
                     pos += 1
-                # all_colors.add(color)
-                # row_colors.add(color)
                 if run > 0:
                     for i in range(run):
-                        self.color_pattern[row, column] = color
+                        output[row, column] = color
                         column += 1
-            # self.max_row_colors = max(self.max_row_colors, len(row_colors))
         #
-        ## no stitch data
+        ## ignore stitch data
         self.stitch_pattern = np.zeros((self.height, self.width), np.uint8)
-        #
-        ## get base color
-        # b151 = getByteAt(input_data, 0x151)
-        # if b151:
-        #     self.col1 = np.int8(b151) + 0x100
-        # else:
-        #     self.col1 = 0
-        # self.col2 = getByteAt(input_data, 0x152)
-        #
-        ## calculate return code
-        # b15A = getByteAt(input_data, 0x15A)
-        # if b15A == 0x0E or b15A == 0x0F:
-        #     self.status = 0
-        # else:
-        #     self.status = b15A
-        # if self.status == 0 or \
-        # self.status < self.max_row_colors or \
-        # self.max_row_colors > 2:
-        #     self.status = self.max_row_colors
         #
         ## go to end of pattern block
         pos += 1
@@ -273,15 +289,12 @@ class DAKPatternConverter:
             print("pos {}".format(hex(pos)))
         #
         ## get color information
-        ## block of color data after pattern block = 1775 bytes = 0x47 * 0x19
         if pos < input_size:
-            # if self.col1 == 0:
-                # self.col1 = find_col1(input_data, pos)
             self.__read_colors(input_data, pos)
             #
             ## get additional information, 6 bytes per row
             ## I don't know what these data represent
-            pos += 1775
+            pos += self.color_data_size
             if pos < input_size - 6 and \
             bytes(input_data[pos:pos + 6]) != b'Arial' and \
             input_data[pos:pos + 6] != bytearray(6):
@@ -290,17 +303,14 @@ class DAKPatternConverter:
         #
         ## color information before pattern block
         if pos == input_size or len(self.colors) == 0:
-            # if self.col1 == 0:
-                # self.col1 = Counter(color_array).most_common(1)[0][0]
             color = 0
             for i in range(0x80):
                 a = getByteAt(input_data, i + 3)
                 if a != 0xFF:
                     color += 1
                     pos = 3 * (a & 0xF)
-                    # b = 3 * (self.getByteAt(i + 0x84) & 0xF)
                     new_color = DAKColor(
-                        0x10 + 0x40 * ((self.col1 & 0xFF) == i),
+                        0x10,
                         color,
                         chr(i),
                         "",
@@ -310,12 +320,8 @@ class DAKPatternConverter:
                     self.colors[i] = new_color
                     if self.debug:
                         print("new_color {}".format(new_color.string()))
-        # if self.debug:
-            # print(f"col1 {hex(self.col1)}")
         #
-        ## no information on stitch types
         ## done
-        # return self.status
         return self.__output_im()
 
     def __calc_key(self, data):
@@ -377,18 +383,18 @@ class DAKPatternConverter:
             xorkey[i] = temp1 ^ temp2
         return xorkey
 
-    # read DAK .stp file and return de-obfuscated data
+    # read DAK .stp file and return deobfuscated data
     def stp2dat(self, filename):
-        self.__decode_stp(filename)
+        self.deobfuscate(filename)
         return self.output_data
 
     # read DAK .stp file and return a PIL.Image object
     def stp2im(self, filename):
-        self.__decode_stp(filename)
+        self.deobfuscate(filename)
         return self.__output_im()
 
     # deobfuscate DAK .stp file
-    def __decode_stp(self, filename):
+    def deobfuscate(self, filename):
 
         def __decrypt_blocks(pos):
             blocks = []
@@ -400,7 +406,7 @@ class DAKPatternConverter:
                     return blocks, pos
 
         # decode run length encoding of color and stitch patterns
-        def __decode_runs(data, blocks, offset):
+        def __decode_blocks(blocks):
             output = np.zeros((self.height, self.width), np.uint8)
             block_num = 0
             block_data = blocks[0].data
@@ -419,48 +425,37 @@ class DAKPatternConverter:
                         run = symbol & 0x7F
                         symbol = getByteAt(block_data, pos)
                         pos += 1
-                    # if offset:
-                        # symbol = getByteAt(data, offset + symbol * 2 - 2)
                     if run > 0:
                         for i in range(run):
                             output[row, column] = symbol
                             column += 1
-            return output
 
-        ## constants
-        color_blocks_start = 0xF8
-        color_data_size = 1775 ## 71 colors * 25 bytes
-        #
         ## read data
         input_data = self.__read_file(filename)
         #
         ## check data
-        self.__check_magic(input_data[0:3], (b'D7c',))
-        self.__check_dims(input_data, 3, 5, 500, 3000)
-        # self.status = 0
+        self.__check_magic(input_data[0:3], (self.stp_magic,))
+        self.__check_dims(input_data, 3, 5, self.stp_max_x, self.stp_max_y)
         #
         ## calculate key for decryption
         xorkey = self.__calc_key(input_data)
         #
         ## decrypt data blocks
-        color_blocks, stitch_blocks_start = __decrypt_blocks(color_blocks_start)
+        color_blocks, stitch_blocks_start = __decrypt_blocks(self.header_size)
         stitch_blocks, color_data_start = __decrypt_blocks(stitch_blocks_start)
-        stitch_data_start = color_data_start + color_data_size
+        stitch_data_start = color_data_start + self.color_data_size
         if self.debug:
             print("start of color data {}".format(hex(color_data_start)))
             print("start of stitch data {}".format(hex(stitch_data_start)))
         #
         ## get pattern, color, and stitch data
-        self.color_pattern = __decode_runs(input_data, color_blocks, 0)
-        self.stitch_pattern = __decode_runs(input_data, stitch_blocks, color_data_size)
+        self.color_pattern = __decode_blocks(color_blocks)
+        self.stitch_pattern = __decode_blocks(stitch_blocks)
         self.__read_colors(input_data, color_data_start)
         self.__read_stitches(input_data, stitch_data_start)
-        # if self.debug:
-            # print(input_data[stitch_data_start:stitch_data_start+0x100])
-            # print(self.colors)
         #
         ## output data
-        data = bytearray(input_data[0:0xF8]) ## header
+        data = bytearray(input_data[0:self.header_size]) ## header
         for i in range(len(color_blocks)):
             data += color_blocks[i].raw()
         for i in range(len(color_blocks)):
@@ -470,21 +465,21 @@ class DAKPatternConverter:
         #
         # return self.status
 
-    # accepts de-obfuscated data and returns DAK .stp file
-    def dat2stp(self, input_data):
+    # accepts deobfuscated data and returns data in DAK .stp format
+    def obfuscate(self, input_data):
 
-        def __encode_blocks(data, blocks, offset):
+        def __encode_blocks(data, blocks):
             length = 0
-            for row in range(len(blocks)):
-                length += blocks[row].size + 4
+            for b in range(len(blocks)):
+                length += blocks[b].size + 4
             output = np.zeros(length, np.uint8)
             pos = 0
-            for row in range(len(blocks)):
-                s = blocks[row].size
-                putWordAt(output, pos, blocks[row].height)
+            for b in range(len(blocks)):
+                s = blocks[b].size
+                putWordAt(output, pos, blocks[b].height)
                 putWordAt(output, pos + 2, s)
-                for i in range(s):
-                    output[pos + 4 + i] = blocks[row].data[i]
+                pos += 4
+                output[pos:pos + s] = blocks[b].data
                 pos += s
             return output
 
@@ -497,37 +492,106 @@ class DAKPatternConverter:
                 if block.height == self.height:
                     return blocks, pos
 
-        ## constants
-        color_blocks_start = 0xF8
-        color_data_size = 1775 ## 71 colors * 25 bytes
-        #
         ## check data
-        self.__check_magic(input_data[0:3], (b'D7c',))
-        self.__check_dims(input_data, 3, 5, 500, 3000)
-        # self.status = 0
+        self.__check_magic(input_data[0:3], (self.stp_magic,))
+        self.__check_dims(input_data, 3, 5, self.stp_max_x, self.stp_max_y)
         #
         ## calculate key for decryption
         xorkey = self.__calc_key(input_data)
         #
         ## encrypt data blocks
-        color_blocks, stitch_blocks_start = __encrypt_blocks(color_blocks_start)
+        color_blocks, stitch_blocks_start = __encrypt_blocks(self.header_size)
         stitch_blocks, color_data_start = __encrypt_blocks(stitch_blocks_start)
-        stitch_data_start = color_data_start + color_data_size
+        stitch_data_start = color_data_start + self.color_data_size
         if self.debug:
             print("start of color data {}".format(hex(color_data_start)))
             print("start of stitch data {}".format(hex(stitch_data_start)))
         #
         ## get pattern, color, and stitch data
-        self.color_pattern = __encode_blocks(input_data, color_blocks, 0)
-        self.stitch_pattern = __encode_blocks(input_data, stitch_blocks, color_data_size)
-        # if self.debug:
-            # print(input_data[stitch_data_start:stitch_data_start+0x60])
-            # print(self.colors)
+        self.color_pattern = __encode_blocks(input_data, color_blocks)
+        self.stitch_pattern = __encode_blocks(input_data, stitch_blocks)
         #
         ## output data
-        self.output_data = input_data[0:0xF8] + bytearray(self.color_pattern) + bytearray(self.stitch_pattern) + input_data[color_data_start:]
+        self.output_data = input_data[0:self.header_size] + bytearray(self.color_pattern) + bytearray(self.stitch_pattern) + input_data[color_data_start:]
         #
         # return self.status
         return self.output_data
+
+    ## return data in run-length-encoded blocks
+    def __encode_data(self, data : bytes, offset=0):
+        pos = 0
+        buffer = bytearray(self.width * self.height)
+        buffer_pos = 0
+        row_start = 0
+        for row in range(self.height):
+            putWordAt(buffer, buffer_pos, row + 1)
+            row_data = data[row_start:row_start + self.width]
+            runs = rle(row_data, offset)
+            runs_length = len(runs)
+            putWordAt(buffer, buffer_pos + 2, runs_length)
+            buffer_pos += 4
+            buffer[buffer_pos:buffer_pos + runs_length] = runs
+            buffer_pos += runs_length
+            row_start += self.width
+        return buffer[:buffer_pos]
+
+    # input PIL.Image object and return data in DAK .stp format 
+    def im2stp(self, im : Image, x_repeats = 1, y_repeats = 1):
+
+        ## return color data in 25-byte blocks
+        def __encode_palette(palette, num_colors):
+            buffer = bytearray(self.color_data_size)
+            buffer_pos = self.color_gap * self.color_size
+            palette_pos = 0
+            for color in range(num_colors):
+                buffer[buffer_pos] = 0x10 ## code
+                ##buffer[buffer_pos + 1] = color + self.symbol_offset ## symbol
+                buffer[buffer_pos + 3] = color + self.color_gap ## number
+                buffer[buffer_pos + 6:buffer_pos + 9] = palette[palette_pos:palette_pos + 3]
+                palette_pos += 3
+                buffer_pos += self.color_size
+            return buffer
+
+        header = bytearray(self.header_size)
+        header[0:3] = self.stp_magic
+        self.height = im.height
+        self.width = im.width
+        putWordAt(header, 0x03, self.height)
+        putWordAt(header, 0x05, self.width)
+        putWordAt(header, 0x07, self.height)
+        putWordAt(header, 0x09, self.width)
+        putWordAt(header, 0x0B, x_repeats)
+        putWordAt(header, 0x0D, y_repeats)
+        header[0x2C] = 0x00 ## machine Fair Isle (max 2 colors per row)
+        header[0x39] = 0x7B ## version
+        header[0xD8] = 0x12 ## version
+        header[0xE9] = 0x00 ## row 1 starts RHS
+        header[0xEA] = 0x00 ## flat knit
+        header[0xEE] = 0x02 ## colour changer off
+        header[0xB1:0xB6] = b'Arial' # font
+        im = im.quantize(colors=self.max_colors - self.color_gap).transpose(Image.ROTATE_180)
+        image_data = list(im.getdata())
+        num_colors = max(image_data) + 1
+        #
+        ## encode color and stitch data
+        color_blocks = self.__encode_data(image_data, self.color_gap)
+        stitch_blocks = self.__encode_data(im.width * im.height * b'\0', 1)
+        #
+        ## encode color palette
+        color_data = __encode_palette(im.getpalette(), num_colors)
+        #
+        ## encode stitches
+        stitch_data = bytearray(self.max_stitches * self.stitch_size)
+        stitch_data[0] = 0x20 ## knit
+        stitch_data[2] = 0x2E ## purl
+        #
+        ## pad end of file with zeros
+        ## it doesn't matter how many zeros as long as there are enough
+        ## increase padding if DAK returns 'range error' when the file is opened
+        padding = bytes(1024)
+        #
+        ## output
+        #return self.obfuscate(header + color_blocks + stitch_blocks + color_data + stitch_data + padding)
+        return header + color_blocks + stitch_blocks + color_data + stitch_data + padding
 
 # end of DAKPatternConverter class definition
