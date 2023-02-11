@@ -1600,10 +1600,10 @@ K3tog
 Knit 3 together
 SSSK
 S1 knitwise 3 times. Insert left needle from back through all 3 stitches and K3tog
-DblDecR
-Right-slanting double decrease
 P3tog
 Purl 3 together
+DblDecR
+Right-slanting double decrease
 
 78
 P3tog
@@ -1628,6 +1628,8 @@ P3togtbl
 Purl 3 together through back of loops
 SSSKtbl
 Slip 1 Knitwise 3 times. Return to left needle and K3 tog tbl
+-
+-
 
 175
 SSSKtbl
@@ -1638,6 +1640,8 @@ SSSPtbl
 Slip 1 Knitwise 3 times. Return to left needle and P3 tog tbl
 K3togtbl
 Knit 3 together through back of loops
+-
+-
 
 172
 P3togtbl
@@ -1648,6 +1652,8 @@ K3togtbl
 Knit 3 together through back of loops
 SSSPtbl
 Slip 1 Knitwise 3 times. Return to left needle and P3 tog tbl
+-
+-
 
 173
 SSSPtbl
@@ -1658,6 +1664,8 @@ SSSKtbl
 Slip 1 Knitwise 3 times. Return to left needle and K3 tog tbl
 P3togtbl
 Purl 3 together through back of loops
+-
+-
 
 ===
 
