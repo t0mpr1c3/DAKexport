@@ -46,7 +46,6 @@ def rle(input : bytes, offset = 0):
                 if i == n:
                     return output[:j + 2]
                 j += 2
-                value = next_value
                 i += 1
                 run = 0x81
         else:
@@ -57,12 +56,9 @@ def rle(input : bytes, offset = 0):
                 output[j] = run
                 output[j + 1] = value
                 j += 2
-            if i == n:
-                output[j] = next_value
-                return output[:j + 1]
-            value = next_value
-            i += 1
-            run = 0x81
+                i += 1
+                run = 0x81
+                value = next_value
     if run == 0x81:
         output[j] = value
         return output[:j + 1]
