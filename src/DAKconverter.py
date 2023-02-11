@@ -591,7 +591,6 @@ class DAKPatternConverter:
         padding = bytes(1024)
         #
         ## output
-        #return self.obfuscate(header + color_blocks + stitch_blocks + color_data + stitch_data + padding)
-        return header + color_blocks + stitch_blocks + color_data + stitch_data + padding
+        return self.obfuscate(header + color_blocks + stitch_blocks + color_data + stitch_data + padding)
 
 # end of DAKPatternConverter class definition
