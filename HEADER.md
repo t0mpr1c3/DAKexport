@@ -31,7 +31,6 @@ few colours.
 		0x0C hand knitting,
 		0x0E machine RS texture
 		0x0F machine WS texture
-
 * location 0xEA=0x00 flat knit,
 		0x01 circular knit
 * location 0xE9=0x00 row 1 starts RHS,
