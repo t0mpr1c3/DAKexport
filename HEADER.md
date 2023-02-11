@@ -51,6 +51,7 @@ few colours.
 
 ## Font
 * location 0xB1=0x6C61697241 ('Arial')
+* other font names also work
 
 ## Miscellaneous
 * "Magic number" - location 0x00=0x633744 ('D7c'),
