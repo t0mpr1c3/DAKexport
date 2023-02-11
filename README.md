@@ -13,21 +13,18 @@ to that software.
 The priority is making patterns usable for people with domestic-market
 knitting machines from brands like Brother and Silver Reed.
 
-## Tasks
+## Status
 
 Progress has already been made on decoding the proprietary format 
 (see [DAKimport](https://github.com/t0mpr1c3/DAKimport)). There is an
 initial header of 0xF8 bytes whose important content is known. Following
-that is a block of colour data, one byte per stitch from left to right, 
-top to bottom, whose contents references a panel of colour data. This is
-followed by a second block of stitch data, also one byte per stitch, whose
-contents are unknown. The raw data are obfuscated to produce a compact binary file.
+that are blocks of run-length encoded colour data whose contents reference 
+a panel of colour data. This is followed by blocks of stitch data, encoded
+in a similar way. The raw data are obfuscated to produce a compact binary file.
 
-A series of experiments will be necessary to discover the stitch codes (Agnes?)
-
-Tom will make a start on a Python module to perform the obfuscation, which
-should be straightforward as it is simply the reverse of the de-obfuscation
-done by `DAKimport`.
+Tom has written a Python module that can perform and reverse the obfuscation.
+Also, the stitch codes have been largely documented with the exception of
+cable stitches.
 
 ## Input
 
