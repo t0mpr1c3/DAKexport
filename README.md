@@ -26,6 +26,8 @@ Tom has written a Python module that can perform and reverse the obfuscation.
 Also, the stitch codes have been largely documented with the exception of
 cable stitches.
 
+One thing that has not been investigated yet is how memo information is encoded.
+
 ## Input
 
 For this to be useful it needs to be able to work with various different
