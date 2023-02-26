@@ -42,7 +42,8 @@ https://github.com/mhofmann-uw/599-Knitting-Complete).
 
 I have come up with a format called [Knitscheme](https://github.com/t0mpr1c3/knitscheme)
 which is essentially a generalisation of Knitspeak to multiple yarns. It is
-currently possible to input multicolour `.png` files. I am planning to write
+currently possible to input multicolour `.png` files. Both import and export
+methods are available for `.stp` files. I am planning to write
 a parser for Knitspeak in the near future.
 
 My tentative suggestion is to use Knitscheme as an intermediate format, at least
