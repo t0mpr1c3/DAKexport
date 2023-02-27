@@ -4,4 +4,4 @@ DAK9 definitions with typos/errors:
 234,235 (4Inc should be 4IncP where purled)
 174,175 (K3togtble should be K3togtbl)
 238,239 (P2togtbl should be P2tog)
-75,76,108,109 (SSK should be SSK2togtbl)
+75,76,108,109 (SSK should be SSKtbl)
