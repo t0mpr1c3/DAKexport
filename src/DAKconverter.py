@@ -555,7 +555,7 @@ class DAKPatternConverter:
         putWordAt(header, 0x03, self.width)
         putWordAt(header, 0x05, self.height)
         putWordAt(header, 0x07, self.width)
-        putWordAt(header, 0x09, self.height)
+        putWordAt(header, 0x09 , self.height)
         putWordAt(header, 0x0B, x_repeats)
         putWordAt(header, 0x0D, y_repeats)
         header[0x2C] = 0x00 ## machine Fair Isle (max 2 colors per row)
